@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VCU Course Registration | Course Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">VCU</div>
+      <div>
+        <h1>Course Registration System</h1>
+        <p>Course Search Screen</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="course_search.html">Course Search</a>
+      <a href="registration.html">Student Registration</a>
+      <a href="instructor_schedule.html">Instructor Schedules</a>
+      <a href="enrollment.html">Session Enrollment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-text">
+      <h2>Search Available Courses</h2>
+      <p>Search for Spring 2027 courses by department, instructor, or course number.</p>
+    </section>
+
+    <section class="quick-search">
+      <h2>Course Search Filters</h2>
+
+      <form>
+        <input type="text" placeholder="Department, example: INFO">
+        <input type="text" placeholder="Instructor, example: McGarry">
+        <input type="text" placeholder="Course number, example: 465">
+        <button type="button" onclick="alert('Search results updated for the selected filters.')">Search Courses</button>
+      </form>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <h3>INFO 465 - Projects in Information Systems</h3>
+        <p><strong>Instructor:</strong> Dr. Michael McGarry</p>
+        <p><strong>Credit Hours:</strong> 3</p>
+        <p><strong>Prerequisites:</strong> INFO 350, INFO 364, INFO 370</p>
+        <p><strong>Modality:</strong> Online / Zoom</p>
+        <p><strong>Enrollment:</strong> 22 / 30</p>
+        <a href="registration.html">Register for this Course</a>
+      </article>
+
+      <article class="feature-card">
+        <h3>INFO 364 - Database Systems</h3>
+        <p><strong>Instructor:</strong> Prof. Carter</p>
+        <p><strong>Credit Hours:</strong> 3</p>
+        <p><strong>Prerequisites:</strong> INFO 350</p>
+        <p><strong>Modality:</strong> In Person</p>
+        <p><strong>Enrollment:</strong> 28 / 35</p>
+        <a href="registration.html">Register for this Course</a>
+      </article>
+
+      <article class="feature-card">
+        <h3>INFO 370 - Systems Analysis</h3>
+        <p><strong>Instructor:</strong> Prof. Nguyen</p>
+        <p><strong>Credit Hours:</strong> 3</p>
+        <p><strong>Prerequisites:</strong> INFO 350</p>
+        <p><strong>Modality:</strong> Hybrid</p>
+        <p><strong>Enrollment:</strong> 34 / 34</p>
+        <a href="registration.html">View Registration Options</a>
+      </article>
+
+      <article class="feature-card">
+        <h3>INFO 350 - Programming Fundamentals</h3>
+        <p><strong>Instructor:</strong> Prof. Davis</p>
+        <p><strong>Credit Hours:</strong> 3</p>
+        <p><strong>Prerequisites:</strong> None</p>
+        <p><strong>Modality:</strong> Online</p>
+        <p><strong>Enrollment:</strong> 18 / 30</p>
+        <a href="registration.html">Register for this Course</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>INFO 465 Team UI/UX Draft | Course Search</p>
+  </footer>
+
+</body>
+</html>

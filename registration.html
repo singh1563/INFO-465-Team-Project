@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VCU Course Registration | Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">VCU</div>
+      <div>
+        <h1>Course Registration System</h1>
+        <p>Student Registration Screen</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="course_search.html">Course Search</a>
+      <a class="active" href="registration.html">Student Registration</a>
+      <a href="instructor_schedule.html">Instructor Schedules</a>
+      <a href="enrollment.html">Session Enrollment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Student Registration</h2>
+        <p>Log in, review your current schedule, and register for open course sessions.</p>
+
+        <form>
+          <input type="text" placeholder="Student ID">
+          <input type="password" placeholder="Password">
+          <button type="button" onclick="alert('Student login successful for demo purposes.')">Log In</button>
+        </form>
+      </div>
+
+      <div class="status-card">
+        <h3>Student Summary</h3>
+        <p><strong>Name:</strong> Demo Student</p>
+        <p><strong>Term:</strong> Spring 2027</p>
+        <p><strong>Total Credits:</strong> 6</p>
+        <p><strong>Status:</strong> Eligible to Register</p>
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>Currently Enrolled Sessions</h2>
+
+      <div class="task-list">
+        <div>
+          <h3>INFO 350</h3>
+          <p>Programming Fundamentals</p>
+          <p><strong>Time:</strong> Mon/Wed 10:30 AM - 11:45 AM</p>
+        </div>
+
+        <div>
+          <h3>INFO 364</h3>
+          <p>Database Systems</p>
+          <p><strong>Time:</strong> Tue/Thu 1:00 PM - 2:15 PM</p>
+        </div>
+
+        <div>
+          <h3>Registration Rules</h3>
+          <p>Duplicate registrations and full course sections are blocked by validation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <article class="feature-card">
+        <h3>INFO 465 - Projects in Information Systems</h3>
+        <p><strong>Open Seats:</strong> 8</p>
+        <p><strong>Credits:</strong> 3</p>
+        <p><strong>Validation:</strong> Student meets prerequisites.</p>
+        <button type="button" onclick="alert('Registration successful: INFO 465 has been added to your schedule.')">Register</button>
+      </article>
+
+      <article class="feature-card">
+        <h3>INFO 370 - Systems Analysis</h3>
+        <p><strong>Open Seats:</strong> 0</p>
+        <p><strong>Credits:</strong> 3</p>
+        <p><strong>Validation:</strong> Enrollment limit reached.</p>
+        <button type="button" onclick="alert('Registration blocked: this course section is full.')">Register</button>
+      </article>
+
+      <article class="feature-card">
+        <h3>INFO 364 - Database Systems</h3>
+        <p><strong>Open Seats:</strong> 7</p>
+        <p><strong>Credits:</strong> 3</p>
+        <p><strong>Validation:</strong> Already enrolled.</p>
+        <button type="button" onclick="alert('Registration blocked: duplicate registration detected.')">Register</button>
+      </article>
+
+      <article class="feature-card">
+        <h3>INFO 491 - Internship</h3>
+        <p><strong>Open Seats:</strong> 12</p>
+        <p><strong>Credits:</strong> 3</p>
+        <p><strong>Validation:</strong> Advisor approval required.</p>
+        <button type="button" onclick="alert('Registration pending: advisor approval is required.')">Request Approval</button>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>INFO 465 Team UI/UX Draft | Student Registration</p>
+  </footer>
+
+</body>
+</html>
