@@ -7,7 +7,7 @@ https://github.com/singh1563/INFO-465-Team-Project.git
 Team Member Contributions:
 - Suraj Singh: Created the GitHub repository, added team collaborators, built the Home Screen, created shared styling, added navigation links, and created starter placeholder pages.
 
-- [Teammate Name]; Course Search Screen.
+- Benjamin Lai; Completed the Course Search Screen by adding search filters, course result cards, course details, enrollment information, navigation links, and consistent styling with the shared design.
 
 - [Teammate Name]; Student Registration Screen.
 
