@@ -1,57 +1,116 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VCU Course Registration | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">VCU</div>
+      <div>
+        <h1>Course Registration System</h1>
+        <p>Spring 2027 Registration Portal</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="course_search.html">Course Search</a>
+      <a href="registration.html">Student Registration</a>
+      <a href="instructor_schedule.html">Instructor Schedules</a>
+      <a href="enrollment.html">Session Enrollment</a>
+    </nav>
+  </header>
+
+  <main>
     <section class="hero">
-        <div class="hero-text">
-            <h2>Welcome to the VCU Course Registration Portal</h2>
-            <p>
-                Browse available courses, register for classes, view instructor schedules,
-                and manage enrollment information all in one convenient location.
-            </p>
+      <div class="hero-text">
+        <h2>Plan, search, and register for courses in one place.</h2>
+        <p>
+          Students can search available courses, register for sessions, and review their schedule.
+          Instructors can view assigned teaching sessions, while authorized users can review session enrollment.
+        </p>
 
-            <div class="hero-actions">
-                <a class="primary-btn" href="course_search.html">Search Courses</a>
-                <a class="secondary-btn" href="registration.html">Register Now</a>
-            </div>
+        <div class="hero-actions">
+          <a class="primary-btn" href="course_search.html">Search Courses</a>
+          <a class="secondary-btn" href="registration.html">Register for Classes</a>
         </div>
+      </div>
+
+      <div class="status-card">
+        <h3>Registration Status</h3>
+        <p><strong>Term:</strong> Spring 2027</p>
+        <p><strong>Registration Window:</strong> Open</p>
+        <p><strong>System Notice:</strong> Review prerequisites before registering.</p>
+      </div>
     </section>
 
-    <section class="features">
-        <div class="feature-card">
-            <h3>Course Search</h3>
-            <p>Find courses by subject, instructor, or semester.</p>
-            <a href="course_search.html">Go to Course Search</a>
-        </div>
+    <section class="quick-search">
+      <h2>Quick Course Lookup</h2>
+      <p>Search by department, instructor, or course number.</p>
 
-        <div class="feature-card">
-            <h3>Student Registration</h3>
-            <p>Register for classes and manage your course schedule.</p>
-            <a href="registration.html">Go to Registration</a>
-        </div>
-
-        <div class="feature-card">
-            <h3>Instructor Schedules</h3>
-            <p>View instructor teaching schedules and availability.</p>
-            <a href="instructor_schedule.html">View Schedules</a>
-        </div>
-
-        <div class="feature-card">
-            <h3>Enrollment</h3>
-            <p>Review enrollment status and course capacity information.</p>
-            <a href="enrollment.html">View Enrollment</a>
-        </div>
+      <form id="quickSearchForm">
+        <input id="quickSearchInput" type="text" placeholder="Example: INFO 465, McGarry, Database">
+        <button type="submit">Go to Search</button>
+      </form>
     </section>
 
-    <section class="about">
-        <h2>Why Use This Portal?</h2>
-        <ul>
-            <li>Easy course registration</li>
-            <li>Quick access to course and instructor information</li>
-            <li>Clear enrollment and capacity details</li>
-            <li>User-friendly navigation for students and staff</li>
-        </ul>
-    </section>
-</main>
+    <section class="feature-grid">
+      <article class="feature-card">
+        <h3>Course Search</h3>
+        <p>Find courses by department, instructor, or course number. View credit hours, prerequisites, modality, and enrollment limits.</p>
+        <a href="course_search.html">Open Course Search</a>
+      </article>
 
-<footer>
-    <p>&copy; 2027 Virginia Commonwealth University</p>
-    <p>Need help? Contact the Registrar's Office.</p>
-</footer>
+      <article class="feature-card">
+        <h3>Student Registration</h3>
+        <p>Students can log in, view enrolled sessions, and register for new sessions while avoiding duplicate registrations.</p>
+        <a href="registration.html">Open Student Registration</a>
+      </article>
+
+      <article class="feature-card">
+        <h3>Instructor Schedules</h3>
+        <p>Instructors can log in and view their assigned teaching sessions for the semester.</p>
+        <a href="instructor_schedule.html">Open Instructor Schedules</a>
+      </article>
+
+      <article class="feature-card">
+        <h3>Session Enrollment</h3>
+        <p>Authorized users can view which students are enrolled in a selected course session.</p>
+        <a href="enrollment.html">Open Session Enrollment</a>
+      </article>
+    </section>
+
+    <section class="task-section">
+      <h2>Typical User Tasks</h2>
+
+      <div class="task-list">
+        <div>
+          <h3>Student</h3>
+          <p>Search for a course, check prerequisites, and register for an open session.</p>
+        </div>
+
+        <div>
+          <h3>Instructor</h3>
+          <p>Log in and review assigned sessions, meeting times, modality, and location.</p>
+        </div>
+
+        <div>
+          <h3>Administrator</h3>
+          <p>Review enrollment for a specific session and confirm student counts.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>INFO 465 Team UI/UX Draft | Online Course Registration System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
