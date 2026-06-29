@@ -5,15 +5,13 @@ Repository URL:
 https://github.com/singh1563/INFO-465-Team-Project.git
 
 Team Member Contributions:
-- Suraj Singh: Created the GitHub repository, added team collaborators, built the Home Screen, created shared styling, added navigation links, and created starter placeholder pages.
+- Suraj Singh: Created the GitHub repository, added team collaborators, built the Home Screen, Instructor Schedule Screen, created shared styling, added navigation links, and created starter placeholder pages.
 
-- [Teammate Name]; Course Search Screen.
+- Benjamin Lai; Course Search Screen.
 
-- [Teammate Name]; Student Registration Screen.
+- Jacob Evans; Student Registration Screen.
 
-- [Teammate Name]; Instructor Schedule Screen.
-
-- [Teammate Name]; Session Enrollment Screen.
+- Makayla Pelt; Session Enrollment Screen.
 
 
 Screen Summaries:
