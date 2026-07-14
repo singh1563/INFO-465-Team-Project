@@ -29,60 +29,25 @@
   <main>
     <section class="hero-text">
       <h2>Search Available Courses</h2>
-      <p>Search for Spring 2027 courses by department, instructor, or course number.</p>
+      <p>Search for Spring 2027 courses by department, instructor, or course number. Results update using the shared JavaScript course data for the Sprint 1 prototype.</p>
     </section>
 
     <section class="quick-search">
       <h2>Course Search Filters</h2>
 
-      <form>
-        <input type="text" placeholder="Department, example: INFO">
-        <input type="text" placeholder="Instructor, example: McGarry">
-        <input type="text" placeholder="Course number, example: 465">
-        <button type="button" onclick="alert('Search results updated for the selected filters.')">Search Courses</button>
+      <form id="courseSearchForm">
+        <input id="departmentInput" type="text" placeholder="Department, example: INFO">
+        <input id="instructorInput" type="text" placeholder="Instructor, example: McGarry">
+        <input id="courseNumberInput" type="text" placeholder="Course number, example: 465">
+        <button type="submit">Search Courses</button>
+        <button id="clearSearchButton" type="button">Clear</button>
       </form>
+
+      <p id="resultSummary" class="message neutral">All available course sections are displayed.</p>
     </section>
 
-    <section class="feature-grid">
-      <article class="feature-card">
-        <h3>INFO 465 - Projects in Information Systems</h3>
-        <p><strong>Instructor:</strong> Dr. Michael McGarry</p>
-        <p><strong>Credit Hours:</strong> 3</p>
-        <p><strong>Prerequisites:</strong> INFO 350, INFO 364, INFO 370</p>
-        <p><strong>Modality:</strong> Online / Zoom</p>
-        <p><strong>Enrollment:</strong> 22 / 30</p>
-        <a href="registration.html">Register for this Course</a>
-      </article>
-
-      <article class="feature-card">
-        <h3>INFO 364 - Database Systems</h3>
-        <p><strong>Instructor:</strong> Prof. Carter</p>
-        <p><strong>Credit Hours:</strong> 3</p>
-        <p><strong>Prerequisites:</strong> INFO 350</p>
-        <p><strong>Modality:</strong> In Person</p>
-        <p><strong>Enrollment:</strong> 28 / 35</p>
-        <a href="registration.html">Register for this Course</a>
-      </article>
-
-      <article class="feature-card">
-        <h3>INFO 370 - Systems Analysis</h3>
-        <p><strong>Instructor:</strong> Prof. Nguyen</p>
-        <p><strong>Credit Hours:</strong> 3</p>
-        <p><strong>Prerequisites:</strong> INFO 350</p>
-        <p><strong>Modality:</strong> Hybrid</p>
-        <p><strong>Enrollment:</strong> 34 / 34</p>
-        <a href="registration.html">View Registration Options</a>
-      </article>
-
-      <article class="feature-card">
-        <h3>INFO 350 - Programming Fundamentals</h3>
-        <p><strong>Instructor:</strong> Prof. Davis</p>
-        <p><strong>Credit Hours:</strong> 3</p>
-        <p><strong>Prerequisites:</strong> None</p>
-        <p><strong>Modality:</strong> Online</p>
-        <p><strong>Enrollment:</strong> 18 / 30</p>
-        <a href="registration.html">Register for this Course</a>
-      </article>
+    <section id="courseResults" class="feature-grid" aria-live="polite">
+      <!-- Course result cards are inserted by script.js -->
     </section>
   </main>
 
@@ -90,5 +55,6 @@
     <p>INFO 465 Team UI/UX Draft | Course Search</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
