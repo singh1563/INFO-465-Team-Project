@@ -223,3 +223,65 @@ footer {
     padding: 20px;
   }
 }
+/* Sprint 1 implementation additions */
+.message {
+  display: block;
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.message.success {
+  background: #ecfdf5;
+  border: 1px solid #10b981;
+  color: #065f46;
+}
+
+.message.error {
+  background: #fef2f2;
+  border: 1px solid #ef4444;
+  color: #991b1b;
+}
+
+.message.neutral {
+  background: #f9fafb;
+  border: 1px solid #cbd5e1;
+  color: #374151;
+}
+
+.demo-credentials {
+  background: #fffbeb;
+  border: 1px solid #f8b800;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.badge-open {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #10b981;
+}
+
+.badge-closed {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #ef4444;
+}
+
+.full-width-card {
+  grid-column: 1 / -1;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
