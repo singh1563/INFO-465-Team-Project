@@ -32,49 +32,26 @@
         <h2>Instructor Schedule Login</h2>
         <p>Instructors can log in to view assigned sessions, meeting times, locations, modality, and enrolled student counts.</p>
 
-        <form>
-          <input type="text" placeholder="Instructor ID">
-          <input type="password" placeholder="Password">
-          <button type="button" onclick="alert('Instructor login successful for demo purposes.')">Log In</button>
+        <form id="instructorLoginForm">
+          <input id="instructorIdInput" type="text" placeholder="Instructor ID, example: MCGARRY" autocomplete="username">
+          <input id="instructorPasswordInput" type="password" placeholder="Password, example: instructor123" autocomplete="current-password">
+          <button type="submit">Log In</button>
         </form>
+
+        <p id="instructorLoginMessage" class="message neutral">Demo credentials: MCGARRY / instructor123</p>
       </div>
 
-      <div class="status-card">
-        <h3>Instructor Profile</h3>
-        <p><strong>Name:</strong> Dr. Michael McGarry</p>
-        <p><strong>Department:</strong> Information Systems</p>
-        <p><strong>Term:</strong> Spring 2027</p>
-        <p><strong>Assigned Sessions:</strong> 3</p>
+      <div id="instructorProfile" class="status-card">
+        <!-- Instructor profile is inserted by script.js -->
       </div>
     </section>
 
     <section class="task-section">
       <h2>Assigned Teaching Sessions</h2>
+      <p>This section supports Sprint 1 Story 9 by showing instructor-specific course information after login.</p>
 
-      <div class="task-list">
-        <div>
-          <h3>INFO 465 - Section 001</h3>
-          <p><strong>Days:</strong> Monday / Wednesday</p>
-          <p><strong>Time:</strong> 10:30 AM - 11:45 AM</p>
-          <p><strong>Location:</strong> Online / Zoom</p>
-          <p><strong>Enrollment:</strong> 22 / 30</p>
-        </div>
-
-        <div>
-          <h3>INFO 465 - Section 002</h3>
-          <p><strong>Days:</strong> Tuesday / Thursday</p>
-          <p><strong>Time:</strong> 1:00 PM - 2:15 PM</p>
-          <p><strong>Location:</strong> Snead Hall 2045</p>
-          <p><strong>Enrollment:</strong> 27 / 30</p>
-        </div>
-
-        <div>
-          <h3>INFO 370 - Section 003</h3>
-          <p><strong>Days:</strong> Monday / Wednesday</p>
-          <p><strong>Time:</strong> 3:00 PM - 4:15 PM</p>
-          <p><strong>Location:</strong> Hybrid</p>
-          <p><strong>Enrollment:</strong> 34 / 34</p>
-        </div>
+      <div id="assignedSessionsList" class="task-list">
+        <!-- Assigned session cards are inserted by script.js -->
       </div>
     </section>
 
@@ -93,5 +70,6 @@
     <p>INFO 465 Team UI/UX Draft | Instructor Schedule</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
