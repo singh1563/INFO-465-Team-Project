@@ -29,80 +29,38 @@
   <main>
     <section class="hero">
       <div class="hero-text">
-        <h2>Student Registration</h2>
-        <p>Log in, review your current schedule, and register for open course sessions.</p>
+        <h2>Student Registration Login</h2>
+        <p>Students must log in before viewing student-specific registration information or enrolled classes.</p>
 
-        <form>
-          <input type="text" placeholder="Student ID">
-          <input type="password" placeholder="Password">
-          <button type="button" onclick="alert('Student login successful for demo purposes.')">Log In</button>
+        <form id="studentLoginForm">
+          <input id="studentIdInput" type="text" placeholder="Student ID, example: V00999999" autocomplete="username">
+          <input id="studentPasswordInput" type="password" placeholder="Password, example: student123" autocomplete="current-password">
+          <button type="submit">Log In</button>
         </form>
+
+        <p id="studentLoginMessage" class="message neutral">Demo credentials: V00999999 / student123</p>
       </div>
 
-      <div class="status-card">
-        <h3>Student Summary</h3>
-        <p><strong>Name:</strong> Demo Student</p>
-        <p><strong>Term:</strong> Spring 2027</p>
-        <p><strong>Total Credits:</strong> 6</p>
-        <p><strong>Status:</strong> Eligible to Register</p>
+      <div id="studentSummary" class="status-card">
+        <!-- Student summary is inserted by script.js -->
       </div>
     </section>
 
     <section class="task-section">
       <h2>Currently Enrolled Sessions</h2>
+      <p>This section supports Sprint 1 Story 6 by displaying the logged-in student's current schedule.</p>
 
-      <div class="task-list">
-        <div>
-          <h3>INFO 350</h3>
-          <p>Programming Fundamentals</p>
-          <p><strong>Time:</strong> Mon/Wed 10:30 AM - 11:45 AM</p>
-        </div>
-
-        <div>
-          <h3>INFO 364</h3>
-          <p>Database Systems</p>
-          <p><strong>Time:</strong> Tue/Thu 1:00 PM - 2:15 PM</p>
-        </div>
-
-        <div>
-          <h3>Registration Rules</h3>
-          <p>Duplicate registrations and full course sections are blocked by validation.</p>
-        </div>
+      <div id="enrolledSessionsList" class="task-list">
+        <!-- Enrolled session cards are inserted by script.js -->
       </div>
     </section>
 
-    <section class="feature-grid">
-      <article class="feature-card">
-        <h3>INFO 465 - Projects in Information Systems</h3>
-        <p><strong>Open Seats:</strong> 8</p>
-        <p><strong>Credits:</strong> 3</p>
-        <p><strong>Validation:</strong> Student meets prerequisites.</p>
-        <button type="button" onclick="alert('Registration successful: INFO 465 has been added to your schedule.')">Register</button>
-      </article>
-
-      <article class="feature-card">
-        <h3>INFO 370 - Systems Analysis</h3>
-        <p><strong>Open Seats:</strong> 0</p>
-        <p><strong>Credits:</strong> 3</p>
-        <p><strong>Validation:</strong> Enrollment limit reached.</p>
-        <button type="button" onclick="alert('Registration blocked: this course section is full.')">Register</button>
-      </article>
-
-      <article class="feature-card">
-        <h3>INFO 364 - Database Systems</h3>
-        <p><strong>Open Seats:</strong> 7</p>
-        <p><strong>Credits:</strong> 3</p>
-        <p><strong>Validation:</strong> Already enrolled.</p>
-        <button type="button" onclick="alert('Registration blocked: duplicate registration detected.')">Register</button>
-      </article>
-
-      <article class="feature-card">
-        <h3>INFO 491 - Internship</h3>
-        <p><strong>Open Seats:</strong> 12</p>
-        <p><strong>Credits:</strong> 3</p>
-        <p><strong>Validation:</strong> Advisor approval required.</p>
-        <button type="button" onclick="alert('Registration pending: advisor approval is required.')">Request Approval</button>
-      </article>
+    <section>
+      <h2>Registration Options Preview</h2>
+      <p>These cards remain in the prototype as a preview for the next sprint's enrollment work.</p>
+      <div id="registrationOptions" class="feature-grid">
+        <!-- Registration option cards are inserted by script.js -->
+      </div>
     </section>
   </main>
 
@@ -110,5 +68,6 @@
     <p>INFO 465 Team UI/UX Draft | Student Registration</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
