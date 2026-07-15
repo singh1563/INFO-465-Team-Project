@@ -29,24 +29,48 @@
   <main>
     <section class="hero-text">
       <h2>Search Available Courses</h2>
-      <p>Search for Spring 2027 courses by department, instructor, or course number. Results update using the shared JavaScript course data for the Sprint 1 prototype.</p>
+      <p>
+        Search for available courses by department, instructor, or course number.
+        Select an open section to continue to student registration.
+      </p>
     </section>
 
     <section class="quick-search">
       <h2>Course Search Filters</h2>
 
       <form id="courseSearchForm">
-        <input id="departmentInput" type="text" placeholder="Department, example: INFO">
-        <input id="instructorInput" type="text" placeholder="Instructor, example: McGarry">
-        <input id="courseNumberInput" type="text" placeholder="Course number, example: 465">
+        <input
+          id="departmentInput"
+          type="text"
+          placeholder="Department, example: INFO"
+        >
+
+        <input
+          id="instructorInput"
+          type="text"
+          placeholder="Instructor, example: McGarry"
+        >
+
+        <input
+          id="courseNumberInput"
+          type="text"
+          placeholder="Course number, example: 465"
+        >
+
         <button type="submit">Search Courses</button>
         <button id="clearSearchButton" type="button">Clear</button>
       </form>
 
-      <p id="resultSummary" class="message neutral">All available course sections are displayed.</p>
+      <p id="resultSummary" class="message neutral">
+        All available course sections are displayed.
+      </p>
     </section>
 
-    <section id="courseResults" class="feature-grid" aria-live="polite">
+    <section
+      id="courseResults"
+      class="feature-grid"
+      aria-live="polite"
+    >
       <!-- Course result cards are inserted by script.js -->
     </section>
   </main>
