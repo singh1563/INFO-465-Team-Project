@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VCU Course Registration | Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">VCU</div>
+      <div>
+        <h1>Course Registration System</h1>
+        <p>Student Registration Screen</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="course_search.html">Course Search</a>
+      <a class="active" href="registration.html">Student Registration</a>
+      <a href="instructor_schedule.html">Instructor Schedules</a>
+      <a href="enrollment.html">Session Enrollment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Student Registration Login</h2>
+
+        <p>
+          Students can log in through the application server and retrieve
+          their stored schedule from the database.
+        </p>
+
+        <form id="studentLoginForm">
+          <input
+            id="studentIdInput"
+            type="text"
+            placeholder="Student ID, example: V00999999"
+            autocomplete="username"
+          >
+
+          <input
+            id="studentPasswordInput"
+            type="password"
+            placeholder="Password, example: student123"
+            autocomplete="current-password"
+          >
+
+          <button type="submit">Log In</button>
+          <button id="studentLogoutButton" type="button" hidden>Log Out</button>
+        </form>
+
+        <p id="studentLoginMessage" class="message neutral">
+          Test credentials: V00999999 / student123
+        </p>
+      </div>
+
+      <div id="studentSummary" class="status-card">
+        <!-- Student summary is inserted by script.js -->
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>Currently Enrolled Sessions</h2>
+
+      <p>
+        View the course sections currently included in the student's schedule.
+      </p>
+
+      <div id="enrolledSessionsList" class="task-list">
+        <!-- Enrolled session cards are inserted by script.js -->
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>INFO 465 Online Summer Course Registration System</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

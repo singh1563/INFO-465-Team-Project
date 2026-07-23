@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VCU Course Registration | Instructor Schedule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <div class="brand-mark">VCU</div>
+      <div>
+        <h1>Course Registration System</h1>
+        <p>Instructor Schedule Screen</p>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="course_search.html">Course Search</a>
+      <a href="registration.html">Student Registration</a>
+      <a class="active" href="instructor_schedule.html">Instructor Schedules</a>
+      <a href="enrollment.html">Session Enrollment</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Instructor Schedule Login</h2>
+        <p>Instructors can log in to view assigned sessions, meeting times, locations, modality, and enrolled student counts.</p>
+
+        <form id="instructorLoginForm">
+          <input id="instructorIdInput" type="text" placeholder="Instructor ID, example: MCGARRY" autocomplete="username">
+          <input id="instructorPasswordInput" type="password" placeholder="Password, example: instructor123" autocomplete="current-password">
+          <button type="submit">Log In</button>
+        </form>
+
+        <p id="instructorLoginMessage" class="message neutral">Demo credentials: MCGARRY / instructor123</p>
+      </div>
+
+      <div id="instructorProfile" class="status-card">
+        <!-- Instructor profile is inserted by script.js -->
+      </div>
+    </section>
+
+    <section class="task-section">
+      <h2>Assigned Teaching Sessions</h2>
+      <p>This section supports Sprint 1 Story 9 by showing instructor-specific course information after login.</p>
+
+      <div id="assignedSessionsList" class="task-list">
+        <!-- Assigned session cards are inserted by script.js -->
+      </div>
+    </section>
+
+    <section class="quick-search">
+      <h2>Instructor Actions</h2>
+      <p>Use these actions to review course rosters and session enrollment details.</p>
+
+      <div class="hero-actions">
+        <a class="primary-btn" href="enrollment.html">View Session Enrollment</a>
+        <a class="secondary-btn" href="course_search.html">Review Course Catalog</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>INFO 465 Online Summer Course Registration System | Instructor Schedule</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
